@@ -1,0 +1,41 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html{
+  font-size: 16px;
+}
+
+body{
+  width: 100vw;
+  height: 100vh;
+}
+
+.sky,.grass,.road,.road-lines{
+  width: 100%;
+}
+
+.sky{
+  background-color: rgb(173,216,230);
+  height: 38%;
+}
+
+.grass{
+  background-color: rgb(0,128,0);
+  height: 32%;
+}
+
+.road{
+  background-color: rgb(77,76,76);
+  height: 30%;
+}
+
+.road-lines{
+  border-top: 1.6rem solid white;
+  border-style: dashed;
+  border-bottom: none;
+  position: relative;
+  top: 7.2rem;
+}
