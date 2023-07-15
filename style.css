@@ -56,27 +56,79 @@ img{
   width: 5rem;
   position: absolute;
   bottom: 6.5rem;
+  left: 0rem;
   z-index: 2;
+  animation-name: mario;
+  animation-duration: 3.2s;
+  animation-iteration-count: infinite;
 }
 
 .luigi-img{
   width: 5rem;
   position: relative;
   bottom: 2.5rem;
-  left: 5rem;
+  left: 0rem;
   z-index: 2;
+  animation-name: luigi;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
 }
 /* cloud-img */
 .cloud-img{
   position: relative;
   top: -9rem;
+  left: -8rem;
   z-index: -1;
+  animation-name: cloud-slidein;
+  animation-duration: 60s;
+  animation-iteration-count: infinite;
 }
 
 .light-cloud-img{
   position: relative;
   top: 1.5rem;
-  left: 15rem;
+  left: -8rem;
   z-index: -1;
   opacity: 0.5;
+  animation-name: light-cloud-slidein;
+  animation-duration: 40s;
+  animation-iteration-count: infinite;
+}
+/* animation */
+@keyframes cloud-slidein {
+  from{
+    margin-left: 0%;
+  }
+
+  to{
+    margin-left: 110%;
+  }
+}
+@keyframes light-cloud-slidein {
+  from{
+    margin-left: 0%;
+  }
+
+  to{
+    margin-left: 110%;
+  }
+}
+
+@keyframes mario {
+  from{
+    margin-left: 0%;
+  }
+  to{
+    margin-left: 100%;
+  }
+}
+
+@keyframes luigi {
+  from{
+    margin-left: 0%;
+  }
+
+  to{
+    margin-left: 100%;
+  }
 }
